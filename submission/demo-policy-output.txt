@@ -1,0 +1,24 @@
+
+> @idledev/t3n-vendor-guard@1.0.0 demo:policy
+> tsx src/demo-policy.ts
+
+=== VendorGuard policy demo (offline) ===
+
+• INV-1001 / V-ACME / $125.00
+  → AUTO_APPROVE: Within auto-approve ceiling 500.00 USD; Vendor V-ACME approved
+  → payment instruction placeholder: {{vendor.V-ACME.payment_profile}}
+
+• INV-1002 / V-GLOBEX / $850.00
+  → NEEDS_HUMAN: Amount 850.00 exceeds auto-approve 500.00 — human review required
+  → payment instruction placeholder: {{vendor.V-GLOBEX.payment_profile}}
+
+• INV-1003 / V-SHADY / $90.00
+  → REJECT: Vendor V-SHADY is blocked
+
+• INV-1004 / V-ACME / $2500.00
+  → NEEDS_HUMAN: Amount 2500.00 USD requires a PO (threshold 1000.00)
+  → payment instruction placeholder: {{vendor.V-ACME.payment_profile}}
+
+• INV-1001 / V-ACME / $125.00
+  → REJECT: Duplicate invoice detected within 30d window
+
