@@ -1,0 +1,59 @@
+# Terminal 3 Documentation
+
+- [About](https://docs.terminal3.io/intro/about-t3.md)
+- [Platform Overview](https://docs.terminal3.io/intro/platform.md)
+- [Decentralized ID (DID)](https://docs.terminal3.io/intro/components/did.md): Decentralized Identities and their methods
+- [Smart VCs](https://docs.terminal3.io/intro/components/vc.md): Verifiable Credentials
+- [What is the T3 Network (T3N)?](https://docs.terminal3.io/t3n/overview/what-is-t3n.md): A decentralized confidential computing network
+- [Why T3N?](https://docs.terminal3.io/t3n/overview/why-t3n.md): Regain trust, privacy, and accountability in the age of AI
+- [Architecture](https://docs.terminal3.io/t3n/how-t3n-works/architecture.md): A compliance-aware, multi-region, private-first architecture
+- [Consensus Protocol](https://docs.terminal3.io/t3n/how-t3n-works/consensus.md): Building a resilient, tamper-evident encrypted ledger using Raft consensus
+- [Data Encryption](https://docs.terminal3.io/t3n/how-t3n-works/data-encryption.md): Private data is always encrypted in transit and at rest
+- [Decentralized Identifiers (DIDs)](https://docs.terminal3.io/t3n/how-t3n-works/did.md): Universal ID for both human and agent
+- [Trusted Execution Environment (TEE) Node](https://docs.terminal3.io/t3n/how-t3n-works/tees.md): Confidential, programmable, and verifiable computation
+- [Host API](https://docs.terminal3.io/t3n/how-t3n-works/host-api.md): Host API grants TEE contracts controlled access to system capabilities
+- [Storage Namespaces](https://docs.terminal3.io/t3n/how-t3n-works/z-namespace.md): Tenant-owned TEE contracts and data are named in z-namespace
+- [Tokens](https://docs.terminal3.io/t3n/how-t3n-works/tokens.md): How T3N tokens meter TEE contract execution and storage
+- [Delegate Access to AI Agents](https://docs.terminal3.io/t3n/use-cases/delegate-access-to-agent.md): How T3N allows you to delegate access to AI agents
+- [Delegate Access to Human Helpers](https://docs.terminal3.io/t3n/use-cases/delegate-access-to-human.md): How T3N allows you to delegate access to human helpers
+- [Confidential Multi-Party Computation](https://docs.terminal3.io/t3n/use-cases/mpc.md): How T3N enables confidential multiparty computation (MPC)
+- [Reusable Verified User Data](https://docs.terminal3.io/t3n/use-cases/reusable-user-data.md): How T3N allows you to reuse verified user data
+- [Delegate Access](https://docs.terminal3.io/t3n/data-owner-guide/delegate-access.md): How to grant and manage access permissions for your data.
+- [What is T3 Agent Developer Kit (ADK)?](https://docs.terminal3.io/developers/adk/overview/what-is-adk.md): An SDK suite that allows developers to build safe and secure AI agents
+- [Why T3 ADK?](https://docs.terminal3.io/developers/adk/overview/why-adk.md): Give AI agents real-world capabilities without compromising user privacy, security and compliance
+- [ADK Tour](https://docs.terminal3.io/developers/adk/overview/adk-tour.md): The shape of the ADK in five pieces, before you write any code.
+- [Quickstart](https://docs.terminal3.io/developers/adk/get-started/quickstart.md): Get your first authenticated call to Terminal 3 working in under 10 minutes.
+- [Claim Your API Key & credits](https://docs.terminal3.io/developers/adk/get-started/prerequisites/request-test-tokens.md): Claim your account, key, and test credits in one step — self-serve, no approval.
+- [Set Up Development Environment](https://docs.terminal3.io/developers/adk/get-started/prerequisites/set-up-dev-env.md): Two more steps to get ready for writing your first TEE contract.
+- [What is z-namespace?](https://docs.terminal3.io/developers/adk/get-started/walkthrough/what-is-z-namespace.md)
+- [1. Write your TEE contract](https://docs.terminal3.io/developers/adk/get-started/walkthrough/write-contract.md)
+- [2. Build your TEE contract](https://docs.terminal3.io/developers/adk/get-started/walkthrough/build-contract.md)
+- [3. Register your TEE contract](https://docs.terminal3.io/developers/adk/get-started/walkthrough/register-contract.md)
+- [4. Invoke your TEE contract](https://docs.terminal3.io/developers/adk/get-started/walkthrough/invoke-contract.md)
+- [5. Test your TEE contract](https://docs.terminal3.io/developers/adk/get-started/walkthrough/test.md)
+- [Member Delegation](https://docs.terminal3.io/developers/adk/get-started/member-delegation.md): How a member delegates scoped authority to an AI agent (or another principal), and how an agent authenticates to T3N.
+- [Register a Public Agent](https://docs.terminal3.io/developers/agents/register-agent.md): Give your agent a T3N identity and publish its agent card — from installing the SDK to verifying the registration.
+- [Register an Organization-owned Agent](https://docs.terminal3.io/developers/agents/provision-org-agent.md): Mint an agent your organization owns and controls, with a private agent card the org manages — from installing the SDK to reading the card back.
+- [Running the code samples in this guide](https://docs.terminal3.io/developers/adk/tips/running-code-samples.md): How to actually get a TypeScript snippet from these docs into a runnable file, without it landing in your shell instead.
+- [Verify the trust anchor](https://docs.terminal3.io/developers/adk/tips/verify-trust-anchor.md): What fetchTrustedManifest actually checks, and when the unsafe_trust_server opt-out is (and isn't) appropriate.
+- [Create Tenant KV Maps](https://docs.terminal3.io/developers/adk/tips/create-kv-maps.md)
+- [Seed API key into secrets map](https://docs.terminal3.io/developers/adk/tips/seed-api-key.md): Seed the API key into the secrets map using the map-entry-set control call.
+- [Capabilities come from your WIT imports](https://docs.terminal3.io/developers/adk/tips/capabilities-from-wit-import.md): Capabilities are determined by the host interfaces imported in your contract's world.wit
+- [Outbound HTTP calls are authorized by the user, not the contract](https://docs.terminal3.io/developers/adk/tips/outbound-http-auth-by-user.md)
+- [Placeholders in outbound calls](https://docs.terminal3.io/developers/adk/tips/placeholders-outbound-calls.md): Send private data to a third-party API without it ever entering your contract, using http-with-placeholders.
+- [Read your organization's activity log](https://docs.terminal3.io/developers/adk/tips/get-activity-log.md): Page through every audited contract dispatch in your organization with client.getActivityLog().
+- [Common errors](https://docs.terminal3.io/developers/adk/tips/common-errors.md)
+- [SDK & API Reference](https://docs.terminal3.io/developers/adk/reference.md): Every confirmed ADK method, WIT host interface, and API surface in one place.
+- [Changelog](https://docs.terminal3.io/developers/adk/changelog.md): What's changed in these docs, and what we know about SDK version history so far.
+- [Payroll Agent](https://docs.terminal3.io/developers/adk/use-cases/payroll-agent.md)
+- [Dev Community Support](https://docs.terminal3.io/developers/adk/support/t3-builder-tg.md): This section provides the various channels for developer community support from Terminal 3.
+- [Using AI Coding Assistants](https://docs.terminal3.io/developers/adk/support/ai-coding-assistants.md): A ready-to-use skill file that teaches Claude Code, Codex, Cursor, and other AI coding tools how to build with the T3N ADK.
+
+## OpenAPI Specs
+
+- [terminal-3-openapi](/terminal-3-openapi.yml)
+
+## Optional
+
+- [terminal3.io](https://terminal3.io)
+- [Developer TG](https://t.me/terminal3developer)

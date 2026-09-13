@@ -1,0 +1,41 @@
+{
+  "name": "@idledev/t3n-vendor-guard",
+  "version": "1.0.0",
+  "description": "VendorGuard — enterprise vendor-invoice policy & payment agent on Terminal 3 ADK (TEE-safe, handoff-ready)",
+  "type": "module",
+  "license": "MIT",
+  "author": "IdleDev <onlyidledev@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KvngJamesII/t3n-vendor-guard"
+  },
+  "scripts": {
+    "quickstart": "tsx src/quickstart.ts",
+    "register-agent": "tsx src/register-agent.ts",
+    "demo:policy": "tsx src/demo-policy.ts",
+    "demo:end-to-end": "tsx src/end-to-end.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsx --test src/**/*.test.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@terminal3/t3n-sdk": "^5.15.2",
+    "dotenv": "^17.4.2",
+    "tsx": "^4.23.13",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  },
+  "keywords": [
+    "terminal3",
+    "t3n",
+    "tee",
+    "enterprise-agent",
+    "accounts-payable",
+    "vendor-invoice"
+  ]
+}
