@@ -1,7 +1,3 @@
-
-> @idledev/t3n-vendor-guard@1.0.0 demo:policy
-> tsx src/demo-policy.ts
-
 === VendorGuard policy demo (offline) ===
 
 • INV-1001 / V-ACME / $125.00

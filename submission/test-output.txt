@@ -1,32 +1,28 @@
-
-> @idledev/t3n-vendor-guard@1.0.0 test
-> tsx --test src/**/*.test.ts
-
 TAP version 13
 # Subtest: auto-approves small approved vendor invoice
 ok 1 - auto-approves small approved vendor invoice
   ---
-  duration_ms: 1.079436
+  duration_ms: 1.15314
   ...
 # Subtest: rejects blocked vendor
 ok 2 - rejects blocked vendor
   ---
-  duration_ms: 0.246434
+  duration_ms: 0.17924
   ...
 # Subtest: needs human above auto-approve
 ok 3 - needs human above auto-approve
   ---
-  duration_ms: 0.14703
+  duration_ms: 0.134846
   ...
 # Subtest: needs PO above threshold
 ok 4 - needs PO above threshold
   ---
-  duration_ms: 0.223108
+  duration_ms: 0.220616
   ...
 # Subtest: detects duplicates
 ok 5 - detects duplicates
   ---
-  duration_ms: 0.163416
+  duration_ms: 1.877315
   ...
 1..5
 # tests 5
@@ -36,4 +32,4 @@ ok 5 - detects duplicates
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 366.492549
+# duration_ms 429.609578
